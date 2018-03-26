@@ -1,0 +1,15 @@
+{
+    "name": "<%= name %>",
+    "version": "0.0.1",
+    "description": "<%= description %>",
+    "main": "dist/<%= name %>.js",
+    "module": "es/<%= name %>.js",
+    "jsnext:main": "es/<%= name %>.js",
+    "scripts": {
+        "jsdoc2md": "jsdoc2md --template readme.hbs --files src/<%= name %>.js > readme.md"
+    },
+    "dependencies": {
+        "jsdoc-babel": "^0.3.0",
+        "jsdoc-to-markdown": "^3.0.2"
+    }
+}
